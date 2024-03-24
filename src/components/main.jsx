@@ -2,7 +2,9 @@ import Nav from "./nav"
 
 const main = () => {
     return (
-        <div><Nav/></div>
+        <div className="bg-indigo-500">
+            <Nav/>
+        </div>
     )
 }
 
