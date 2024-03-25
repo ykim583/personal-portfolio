@@ -3,7 +3,7 @@ import {FaHouseChimney} from 'react-icons/fa6'
 const nav = () => {
     return (
     <>
-        <div className="flex items-center justify-between p-10 lg:flex-row">
+        <div className="flex items-center justify-between p-7 lg:flex-row bg-white bg-opacity-30 fixed w-full z-10">
             <div className>
                 <a href="#" className="text-white font-mono text-3xl tracking-wider flex items-center space-x-3"><FaHouseChimney/><span>Min</span></a>
             </div>
@@ -20,3 +20,4 @@ const nav = () => {
 }
 
 export default nav
+
