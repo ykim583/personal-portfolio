@@ -1,11 +1,13 @@
+import {FaHouseChimney} from 'react-icons/fa6'
+
 const nav = () => {
     return (
     <>
         <div className="flex items-center justify-between p-10 lg:flex-row">
-            <div>
-                <a href="#" className="text-white font-mono text-3xl tracking-wider flex items center">Min</a>
+            <div className>
+                <a href="#" className="text-white font-mono text-3xl tracking-wider flex items-center space-x-3"><FaHouseChimney/><span>Min</span></a>
             </div>
-            <div className="space-x-4">
+            <div className="space-x-3">
                 <a href="#" className="hover:bg-indigo-300 rounded-full px-5 py-2 text-xl text-white">Home</a>
                 <a href="#" className="hover:bg-indigo-300 rounded-full px-5 py-2 text-xl text-white">About</a>
                 <a href="#" className="hover:bg-indigo-300 rounded-full px-5 py-2 text-xl text-white">Projects</a>
