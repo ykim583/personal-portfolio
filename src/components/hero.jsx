@@ -33,10 +33,10 @@ const hero = () => {
                 </a>
 
                 <div className='flex mt-5 space-x-4 cursor-pointer'>
-                    <BsFacebook size={35} className='border-2 hover:border-white rounded-full'/>
-                    <BsTwitter size={35} className='border-2 hover:border-white rounded-full'/>
-                    <BsInstagram size={35} className='border-2 hover:border-white rounded-full'/>
-                    <BsLinkedin size={35} className='border-2 hover:border-white rounded-full'/>
+                    <BsFacebook size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
+                    <BsTwitter size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
+                    <BsInstagram size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
+                    <BsLinkedin size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
                 </div>
             </div>
         </section>
