@@ -1,5 +1,7 @@
 import {BsFacebook, BsTwitter, BsInstagram, BsLinkedin} from 'react-icons/bs';
 import HomePic from '../assets/Home.jpg';
+import Resume from "../assets/CV_2024.pdf";
+
 const hero = () => {
     return(
     <div className="w-full h-screen bg-cover bg-center brightness-80" style={{ backgroundImage: `url(${HomePic})` }}>
@@ -23,9 +25,12 @@ const hero = () => {
                 <p className='text-slate-300 font-mono'>
                     Building a world class website using React + Vite + Tailwind CSS
                     To explore more about me, please click
-                    the linke below!
+                    the link below!
                 </p>
-                <button className='bg-white text-black px-10 py-2 my-3 rounded-full hover:bg-gray-400 hover:text-white'>Download Resume</button>
+                <a href={Resume} download="Min's Resume" className="bg-white text-black px-10 py-2 my-3 rounded-full 
+                hover:bg-gray-400 hover:text-white inline-block text-center cursor-pointer">
+                Download Resume
+                </a>
 
                 <div className='flex mt-5 space-x-4 cursor-pointer'>
                     <BsFacebook size={35} className='border-2 hover:border-white rounded-full'/>
