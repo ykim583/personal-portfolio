@@ -3,7 +3,7 @@ import Hero from "./hero"
 
 const main = () => {
     return (
-        <div className="bg-indigo-500">
+        <div>
             <Nav/>
             <Hero/>
         </div>
