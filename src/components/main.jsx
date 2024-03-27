@@ -1,6 +1,6 @@
 import Nav from "./nav";
 import Hero from "./hero";
-import About from "./about";
+import Project from "./project";
 import {Route, Routes} from "react-router-dom";
 
 const main = () => {
@@ -9,7 +9,7 @@ const main = () => {
             <Nav/>
             <Routes>
                 <Route path="/" element={<Hero/>}/>
-                <Route path="/about" element={<About/>}/>
+                <Route path="/project" element={<Project/>}/>
             </Routes>
         </div>
     )
