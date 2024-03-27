@@ -16,9 +16,6 @@ const nav = () => {
                     <Link to={"/project"}>Project</Link>
                 </li>
                 <li className='hover:bg-gray-400 rounded-full px-5 py-2 text-xl text-white'>
-                    <Link to={"/gallery"}>Gallery</Link>
-                </li>
-                <li className='hover:bg-gray-400 rounded-full px-5 py-2 text-xl text-white'>
                     <Link to={"/contact"}>Contact</Link>
                 </li>
             </ul>
