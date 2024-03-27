@@ -23,7 +23,7 @@ const hero = () => {
             <div className='lg:w-1/3 pt-20'>
                 <p className='text-4xl mb-4'>About Me</p> 
                 <p className='text-slate-300 font-mono'>
-                    Building a world class website using React + Vite + Tailwind CSS
+                    Building a better working world. This website is built using React + Vite + Tailwind CSS
                     To explore more about me, please click
                     the link below!
                 </p>
