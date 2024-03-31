@@ -33,10 +33,18 @@ const hero = () => {
                 Download Resume
               </a>
               <div className='flex mt-5 space-x-4 cursor-pointer'>
-                <BsFacebook size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
-                <BsTwitter size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
-                <BsInstagram size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
-                <BsLinkedin size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
+                <a href="https://www.facebook.com/">
+                  <BsFacebook size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
+                </a>
+                <a href="https://twitter.com/?lang=en-nz">
+                  <BsTwitter size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
+                </a>
+                <a href="https://www.instagram.com/">
+                  <BsInstagram size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
+                </a>
+                <a href="https://www.linkedin.com/in/kim-youngmin/">
+                  <BsLinkedin size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
+                </a>
               </div>
             </div>
           </section>
