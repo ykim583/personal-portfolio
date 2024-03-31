@@ -7,10 +7,10 @@ const contact = () => {
             <div>
                 <div className="mb-4 text-center sm:text-center">
                     <p
-                        className="mb-4 font-bold tracking-tight text-white text-3xl sm:text-5xl">
+                        className="mb-4 font-bold text-white text-3xl sm:text-5xl">
                         Connect With me
                     </p>
-                    <p className="max-w-3xl text-xl text-white">
+                    <p className="max-w-3xl text-xl font-bold text-slate-300">
                         Contact Information Field
                     </p>
                 </div>
