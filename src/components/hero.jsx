@@ -1,6 +1,7 @@
 import {BsFacebook, BsTwitter, BsInstagram, BsLinkedin} from 'react-icons/bs';
 import HomePic from '../assets/Home.jpg';
 import Resume from "../assets/CV_2024.pdf";
+import { TypeAnimation } from 'react-type-animation';
 
 const hero = () => {
     return (
@@ -9,8 +10,23 @@ const hero = () => {
             
             <div className='flex flex-col items-center lg:items-start lg:w-1/3'>
               <p className='text-4xl mb-5 text-slate-300'>Welcome</p>
-              <h1 className='text-6xl text-center lg:text-left'>Min's Personal Website</h1>
-              <hr/>
+              
+              <TypeAnimation
+                sequence={[
+                  "Min's Personal Website",
+                  1000,
+                  "Final Year Software Engineer",
+                  1000,
+                  "IT Consultant",
+                  1000
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{fontSize: "2em", display: "inline-block", color: "#F5EEF8"}}
+                repeat={Infinity}
+              />
+
+              <hr></hr>
               <p className='mt-5 text-xl text-slate-300 font-mono text-center lg:text-left'>
                 As a Final Year Software Engineering student at the University of Auckland, 
                 I am deeply committed to continuous skill development and dedicate 
