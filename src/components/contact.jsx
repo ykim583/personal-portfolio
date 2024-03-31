@@ -22,17 +22,17 @@ const contact = () => {
                         <div>
                             <div className="sm:mb-4">
                                 <div className="sm:mb-4">
-                                    <input type="text" id="name" placeholder="Your name" className="mb-2 w-10/12 rounded-md border border-gray-400 py-2 pl-2 sm:mb-0" name="name"/>
+                                    <input type="text" id="name" placeholder="Your name" className="mb-2 w-10/12 rounded-md border border-gray-400 py-2 pl-2 sm:mb-0" name="name" required/>
                                 </div>
                                 <div className="sm:mb-4">
-                                    <input type="email" id="email" placeholder="Your email address" className="mb-2 w-10/12 rounded-md border border-gray-400 py-2 pl-2 sm:mb-0" name="email"/>
+                                    <input type="email" id="email" placeholder="Your email address" className="mb-2 w-10/12 rounded-md border border-gray-400 py-2 pl-2 sm:mb-0" name="email" required/>
                                 </div>
                             </div>
                             <div className="sm:mb-2">
-                                <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-10/12 rounded-md border border-gray-400 py-2 pl-2 sm:mb-0"></textarea>
+                                <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-10/12 rounded-md border border-gray-400 py-2 pl-2 sm:mb-0" required></textarea>
                             </div>
                             <div className="sm:mb-2">
-                                <button type="submit" className="px-20 py-3 bg-white text-black rounded-full hover:bg-lime-50">Send Message</button>
+                                <button type="submit" className="px-20 py-3 bg-white text-black rounded-full">Send Message</button>
                             </div>
                         </div>
                     </form>
