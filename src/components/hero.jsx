@@ -15,7 +15,7 @@ const hero = () => {
                 sequence={[
                   "Min's Personal Website",
                   1000,
-                  "Part IV Sofware Engineer",
+                  "Part IV SE Student",
                   1000,
                   "IT Consultant",
                   1000
@@ -48,7 +48,7 @@ const hero = () => {
               hover:bg-gray-400 hover:text-white inline-block text-center cursor-pointer">
                 Download Resume
               </a>
-              <div className='flex mt-5 space-x-4 cursor-pointer'>
+              <div className='flex pb-5 space-x-4 cursor-pointer'>
                 <a href="https://www.facebook.com/">
                   <BsFacebook size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
                 </a>
