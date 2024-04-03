@@ -11,9 +11,9 @@ export const project = () => {
     <div className='pt-28 min-h-[115vh] bg-gradient-to-b from-white to-gray-700'>
       <div className='px-7 grid sm:grid-cols-2 gap-6'>
 
-        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-10 sm:pr-5'>
-          <a href="https://github.com/UOA-CS732-SE750-Students-2024/cs732-assignment-ykim583" className='group h-48 sm:h-80 col-span-3'>
-            <img src={por1} alt="" className='h-full w-full object-cover object-center transition duration-200 group-hover:scale-105 rounded-lg'/>
+        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden z-10 sm:pr-5'>
+          <a href="https://github.com/UOA-CS732-SE750-Students-2024/cs732-assignment-ykim583" className='h-48 sm:h-80 col-span-3'>
+            <img src={por1} alt="" className='h-full w-full object-cover object-center transition duration-200 hover:scale-105 rounded-lg'/>
           </a>
           <div className='flex flex-col col-span-5 p-4 mx-auto my-auto'>
             <h2 className='text-gray-200 font-bold text-xl leading-10'>Front End + UX/UI</h2>
@@ -21,9 +21,9 @@ export const project = () => {
           </div>
         </div>
 
-        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-10 sm:pr-5'>
-          <a href="https://www.360internationalblog.com/ambassador/youngmin-kim/" className='group h-48 sm:h-80 col-span-3'>
-            <img src={por2} alt="" className='h-full w-full object-cover object-center transition duration-200 group-hover:scale-105 rounded-lg'/>
+        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden z-10 sm:pr-5'>
+          <a href="https://www.360internationalblog.com/ambassador/youngmin-kim/" className='h-48 sm:h-80 col-span-3'>
+            <img src={por2} alt="" className='h-full w-full object-cover object-center transition duration-200 hover:scale-105 rounded-lg'/>
           </a>
           <div className='flex flex-col col-span-5 p-4 mx-auto my-auto'>
             <h2 className='text-gray-200 font-bold text-xl leading-10'>Digital Ambassador</h2>
@@ -31,9 +31,9 @@ export const project = () => {
           </div>
         </div>
 
-        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-10 sm:pr-5'>
-          <a href="https://github.com/ykim583/FullStackWebsite" className='group h-48 sm:h-80 col-span-3'>
-            <img src={por3} alt="" className='h-full w-full object-cover object-center transition duration-200 group-hover:scale-105 rounded-lg'/>
+        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden z-10 sm:pr-5'>
+          <a href="https://github.com/ykim583/FullStackWebsite" className='h-48 sm:h-80 col-span-3'>
+            <img src={por3} alt="" className='h-full w-full object-cover object-center transition duration-200 hover:scale-105 rounded-lg'/>
           </a>
           <div className='flex flex-col col-span-5 p-4 mx-auto my-auto'>
             <h2 className='text-gray-200 font-bold text-xl leading-10'>Full Stack Development</h2>
@@ -41,9 +41,9 @@ export const project = () => {
           </div>
         </div>
 
-        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden shadow-xl z-10 sm:pr-5'>
-          <a href="https://github.com/ykim583/First2DGame" className='group h-48 sm:h-80 col-span-3'>
-            <img src={por4} alt="" className='h-full w-full object-cover object-center transition duration-200 group-hover:scale-105 rounded-lg'/>
+        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden z-10 sm:pr-5'>
+          <a href="https://github.com/ykim583/First2DGame" className='h-48 sm:h-80 col-span-3'>
+            <img src={por4} alt="" className='h-full w-full object-cover object-center transition duration-200 hover:scale-105 rounded-lg'/>
           </a>
           <div className='flex flex-col col-span-5 p-4 mx-auto my-auto'>
             <h2 className='text-gray-200 font-bold text-xl leading-10'>Game Development</h2>
