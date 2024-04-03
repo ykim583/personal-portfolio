@@ -9,7 +9,7 @@ const hero = () => {
           <section className='flex flex-col lg:flex-row justify-around items-center pt-28 lg:space-x-60 text-white px-4 lg:px-0'>
             
             <div className='flex flex-col items-center lg:items-start lg:w-1/3'>
-              <p className='text-4xl mb-5 text-slate-300'>Welcome</p>
+              <p className='text-4xl mt-5 pb-5 font-semibold text-slate-300'>Welcome</p>
               
               <TypeAnimation
                 sequence={[
