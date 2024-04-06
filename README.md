@@ -205,6 +205,8 @@ This is where the main home page, where the user will land, just like the naviga
 
 #### Animated Motion
 
+https://github.com/UOA-CS732-SE750-Students-2024/cs732-assignment-ykim583/assets/100251600/1805cf1f-b21f-47bc-a707-58c49e97d856
+
 The following module will capture some tranform motion effects
 
 ```
@@ -358,7 +360,7 @@ We've covered everything, including utility and configurations, how to create re
 Although our project has ended, it would be better to deploy this website to the public to showcase to people. Hence, I've provided this final tutorial to deploy to the public domain. <br/>
 
 **Step 1 :** `npm run build`, this step will build you a dist folder that compresses all the work we've done. <br/>
-**Step 2 :** Go to https://www.netlify.com/ and sign up if you need an existing account. <br/>
+**Step 2 :** Go to https://www.netlify.com/ and sign up if you don't have an existing account. <br/>
 **Step 3 :** Finally, Once you're logged in, go inside the sites tab and manually drop your dist folder. <br/>
 **Step 4 :** If you want to change your site name, go to site -> site configuration -> General -> Site Details -> Change site name.
 For further instruction, refer to reference [7].
