@@ -6,7 +6,7 @@ const nav = () => {
     <>
         <div className="flex items-center justify-between p-7 bg-gray-600 bg-opacity-30 fixed w-full z-10">
             <ul>
-                <li className="text-2xl lg:text-3xl text-white font-mono tracking-wider flex items-center space-x-3"><FaHouseChimney/><span><Link to={"/"}>Min</Link></span></li>
+                <li className="text-2xl lg:text-3xl text-white font-mono tracking-wider flex items-center space-x-3"><FaHouseChimney/><span><Link to={"/"}>Name</Link></span></li>
             </ul>
             <ul className="flex lg:space-x-3">
                 <li className='hover:bg-gray-400 rounded-full px-3 py-1 sm:px-5 sm:py-2 text-lg sm:text-xl text-white'>

@@ -1,6 +1,6 @@
 import {BsFacebook, BsTwitter, BsInstagram, BsLinkedin} from 'react-icons/bs';
 import HomePic from '../assets/Home.jpg';
-import Resume from "../assets/CV_2024.pdf";
+import Resume from "../assets/Example Resume.pdf";
 import { TypeAnimation } from 'react-type-animation';
 
 const hero = () => {
@@ -13,11 +13,11 @@ const hero = () => {
               
               <TypeAnimation
                 sequence={[
-                  "Min's Personal Website",
+                  "Your Personal Website",
                   1000,
-                  "Part IV SE Student",
+                  "COMPSCI 732/SOFTENG 750",
                   1000,
-                  "IT Consultant",
+                  "Let's Begin",
                   1000
                 ]}
                 wrapper="span"
@@ -28,23 +28,22 @@ const hero = () => {
 
               <hr></hr>
               <p className='mt-5 text-xl text-slate-300 font-mono text-center lg:text-left'>
-                As a Final Year Software Engineering student at the University of Auckland, 
-                I am deeply committed to continuous skill development and dedicate 
-                my free time to building programming projects. My passion for innovation 
-                drives me to explore creative solutions and deliver exceptional results. 
-                Whether working independently or collaboratively, I bring 
-                high professionalism, adaptability, and effective communication 
-                to foster strong teamwork and successful project outcomes.
+              Example Abstraction Content
+              As an enthusiastic Web Developer with a penchant for both front-end and back-end technologies, 
+              I immerse myself in crafting seamless user experiences and robust server-side applications. 
+              My journey in the world of coding began out of sheer curiosity and quickly evolved into a fervent passion, 
+              leading me to constantly seek out new technologies and methodologies. 
+              I'm keen for design and a systematic approach to problem-solving.
               </p>
             </div>
             
             <div className='flex flex-col items-center lg:w-1/3 pt-20 space-y-5'>
               <p className='text-4xl mb-4'>About Me</p> 
               <p className='text-slate-300 font-mono text-center lg:text-left'>
-                Building a better working world. This website is built using React + Vite + Tailwind CSS.
+                You can customise your About me here. This website is built using React + Vite + Tailwind CSS.
                 To explore more about me, please click the link below!
               </p>
-              <a href={Resume} download="Min's Resume" className="bg-white text-black px-10 py-2 rounded-full 
+              <a href={Resume} download="Example Resume" className="bg-white text-black px-10 py-2 rounded-full 
               hover:bg-gray-400 hover:text-white inline-block text-center cursor-pointer">
                 Download Resume
               </a>
@@ -52,13 +51,13 @@ const hero = () => {
                 <a href="https://www.facebook.com/">
                   <BsFacebook size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
                 </a>
-                <a href="https://twitter.com/?lang=en-nz">
+                <a href="https://twitter.com/">
                   <BsTwitter size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
                 </a>
                 <a href="https://www.instagram.com/">
                   <BsInstagram size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
                 </a>
-                <a href="https://www.linkedin.com/in/kim-youngmin/">
+                <a href="https://www.linkedin.com/">
                   <BsLinkedin size={35} className='border-2 hover:border-white rounded-full hover:scale-110'/>
                 </a>
               </div>
