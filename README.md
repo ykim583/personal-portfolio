@@ -9,9 +9,9 @@ I will cover all aspects, from setup and installation to an overview of technica
 2. [Installation guide and Set up Procedure](#ch2)
 3. [Technical introduction and overview](#ch3)
    - 3.1 [nav.jsx - Navigation Menu Configuration (+Routing)](#ch3.1)
-   - 3.2 [hero.jsx - Home Page UX/UI Interface and Motion](#ch3.2)
+   - 3.2 [hero.jsx - Home Page UX/UI Interface and Animation](#ch3.2)
    - 3.3 [project.jsx - Project Display Page and Responsive design (Mobile/Web)](#ch3.3)
-   - 3.4 [contact.jsx - Contact me page and contact form (+REST)](#ch3.4)
+   - 3.4 [contact.jsx - Contact me page and Contact form (+REST)](#ch3.4)
    - 3.5 [Additional Step - Deployment to a public domain](#ch3.5)
 4. [Reference](#ref)
 
@@ -139,7 +139,7 @@ export default main
 This is a code snippet from the main.jsx file. Most of the structure is similar to how it's shown in the code above. We initially have an `import` feature to import files or modules from the local folders or npm files.
 Then, we have the actual operation const main = () = -> {} where the code base lies; think of it as a function that manages and stores all the components inside your code. We then use the 'export' feature to be accessible to other files.
 
-### <a name="ch3.1"> nav.jsx - Naviagtion menu Style and Routing </a>
+### <a name="ch3.1"> nav.jsx - Navigation Menu Configuration (+Routing) </a>
 
 #### Navigation Menu
 
@@ -312,7 +312,7 @@ Now, when we refer back to our example from nav. jsx `text-2xl lg:text-3xl` lg:t
 However, writing lg:text-3xl may not be feasible for mobile devices; it is more feasible for large screens only. This is why we usually define minor breakpoints first and override them with large utilities later. <br/>
 So we define we have a default of 2xl text for screens smaller than lg (1024px), and once 1024px is reached, we then change it to 3xl.
 
-### <a name="ch3.4"> contact.jsx - Contact me page and contact form (+REST) </a>
+### <a name="ch3.4"> contact.jsx - Contact me page and Contact form (+REST) </a>
 
 As we near the end of our tutorial, the final step involves adding a "Contact Me" form. This allows visitors to communicate with you quickly. If you've been following along, you'll find understanding the Tailwind CSS snippet for the form's background simple. This code snippet, which I've already prepared, creates a rounded form with a gray background and includes two text labels.
 
