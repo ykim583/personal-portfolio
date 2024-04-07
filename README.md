@@ -248,7 +248,8 @@ Some extra motion effect is covered on this module project.jsx file, <br/>
 - transition duration-200 : (A effect that sets duration to an element by 200ms, make it more transformitive) <br/>
 - shadow-xl : (Applies an extra-large drop shadow for a 3D effect) <br/>
 
-There is one part that I haven't covered in this tutorial, which is the react-typrwriter animation feature. For anyone interested in it, please refer to the reference [5].
+There is one part that I still need to cover in this tutorial, which is the react-type writer animation feature. This feature is an in-built animation
+feature for React, and anyone interested in it, please refer to the reference [5].
 
 ### <a name="ch3.3"> project.jsx - Project Display Page and Responsive design (Mobile/Web) </a>
 
