@@ -28,8 +28,9 @@ It's recommended that you familiarise yourself with React and Tailwind CSS befor
 ## <a name="ch2"> Installation guide and Set up Procedure </a>
 
 **Step 1 :** Install and set up React on your device: <br/>
-Head to the website https://nodejs.org/en/ and install the latest Node.js to your local environment <br/>
-**Step 2 :** After installation, open your command prompt and check the command line using **node --version**. If installed correclty, the software’s version number should be displayed. <br/>
+Head to the website https://nodejs.org/en/ and install the latest Node.js to your local environment. <br/>
+**Step 2 :** After installation, open your command prompt and type either of the following commands: **node --version** or **node --v**.  <br/> 
+If installed correctly, the software’s version number should be displayed. <br/>
 **Step 3 :** Now let's set up the Vite Website, inside your command prompt, type the following command and make the following list below: <br/>
 
 ```
@@ -98,16 +99,17 @@ For a detailed start-up guide on how to set up Tailwind CSS to Vite, please refe
 git clone https://github.com/UOA-CS732-SE750-Students-2024/cs732-assignment-ykim583.git
 ```
 
-Also, if you haven't already installed Node.js. Install at https://nodejs.org/en/
+**Step 2 :** Suppose you haven't already installed Node.js. Install at https://nodejs.org/en/. <br/>
+Check through typing either of **node --version** or **node --v** in command prompt. If installed correctly, it will display the software number version. 
 
-**Step 2 :** Open the terminal and switch the directory to '.\cs732-assignment-ykim583'. Run the following commands:
+**Step 3 :** Open the terminal and switch the directory to '.\cs732-assignment-ykim583'. Run the following commands:
 
 ```
 cd cs732-assignment-ykim583
 npm install
 ```
 
-**Step 3 :** Run the command `npm run dev` and open the web browser. For codebase, open the cloned folder via your code editor tool.
+**Step 4 :** Run the command `npm run dev` and open the web browser. For codebase, open the cloned folder via your code editor tool.
 
 ## <a name="ch3"> Technical introduction and overview </a>
 
