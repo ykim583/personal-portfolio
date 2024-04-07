@@ -231,7 +231,8 @@ We initially have a reference link to Resume followed by
 - rounded-full : (Make a full rounded shape) <br/>
 - inline-block : (Create a single space, which allows to set the width and height of the element) <br/>
 
-Note, to enable size configuration in react icons, traditional text size won't work, so keep the size element written as size={} before the className.
+The code above is similar to how the nav.jsx cursor bar effect works, so please refer back to nav.jsx as well. <br/>
+One thing to Note, to enable size configuration in react icons, traditional text size won't work, so keep the size element written as size={} before the className.
 
 ```
 <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden z-10 sm:pr-5'>
@@ -268,7 +269,7 @@ Let's continue cover some of the utility feature that we haven't covered yet:
         </div>
 ```
 
-(Code snippet from project.jsx)
+(Code snippet from project.jsx) <br/>
 Now moving back to project.jsx, let's go over some of the utility feature we haven't covered before: <br/>
 
 - Min-h-[100vh] : (Minimum height in which the background should be extended) <br/>
