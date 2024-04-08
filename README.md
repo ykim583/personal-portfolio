@@ -41,7 +41,7 @@ npm create vite@latest
 **Framework:** We’ll be using React for this tutorial, so select React <br/>
 **Variant:** We'll be using JavaScript for this tutorial, so select JavaScript <br/>
 
-**Step 4 :** Now, let's check if the website works, type the following command to your laptop. If it's succesful, you will have the following link (http://localhost:5173/) to be redirected vite page:
+**Step 4 :** Now, let's check if the website works, type the following command to your laptop. If it's successful, you will have the following link (http://localhost:5173/) to be redirected vite page:
 
 ```
 cd first-react-vite-project
@@ -49,7 +49,7 @@ npm install
 npm run dev
 ```
 
-**Step 5 :** It's time to set up the Tailwind CSS into Vite, cd back to your project and install the following npm files into your project. <br/>
+**Step 5 :** It's time to set up the Tailwind CSS into Vite, cd back to your project, and install the following npm files into your project. <br/>
 
 ```
 npm install -D tailwindcss postcss autoprefixer
@@ -89,7 +89,7 @@ npm install react-type animation
 ```
 
 After that, use your preferred code editor (e.g., Visual Studio Code) and install extension **'Tailwind CSS IntelliSense'** for efficient code handling. <br/>
-For a detailed start-up guide on how to set up Tailwind CSS to Vite, please refer to the link https://tailwindcss.com/docs/guides/vite
+For a detailed start-up guide on how to set up Tailwind CSS to Vite, please refer to the reference [1].
 
 ### Steps to run my codebase for Website Portofolio
 
@@ -178,7 +178,7 @@ Also, notice I haven't covered any part related to **lg:** (This will be covered
 
 This feature enables users to route around the website and relocate to different web pages. (This is different from hyperlinks). This part is required to make your navigation menu more responsive to the user. <br/>
 However, I won't cover the details in this tutorial, as our primary focus is mastering the Tailwind CSS part. <br/>
-For anyone interested, please refer to reference[3].
+For anyone interested, please refer to reference [3].
 
 ### <a name="ch3.2"> hero.jsx - Home Page UX/UI Interface and Animation </a>
 
@@ -361,21 +361,21 @@ For specific details about REST API connection, please refer to reference [6].<b
 
 You have just completed the module for creating a Website Portfolio using React, Vite, and Tailwind CSS! Over this course, you have learned all the fundamentals of Tailwind CSS.
 We've covered everything, including utility and configurations, how to create responsive designs, animation motion, and contact forms, and briefly went through the components outside of Tailwind CSS.
+If you want to find out more features about Tailwind CSS, please refer to reference [7].
 Although our project has ended, it would be better to deploy this website to the public to showcase to people. Hence, I've provided this final tutorial to deploy to the public domain. <br/>
 
 **Step 1 :** `npm run build`, this step will build you a dist folder that compresses all the work we've done. <br/>
 **Step 2 :** Go to https://www.netlify.com/ and sign up if you don't have an existing account. <br/>
 **Step 3 :** Finally, Once you're logged in, go inside the sites tab and manually drop your dist folder. <br/>
 **Step 4 :** If you want to change your site name, go to site -> site configuration -> General -> Site Details -> Change site name.
-For further instruction, refer to reference [7].
+For further instruction, refer to reference [8].
 
 ### <a name="ref"> Reference </a> <br/>
-
-[1] Setup Tailwind with React and Vite https://www.youtube.com/watch?v=x2Qm0uwOUuQ&ab_channel=ReactTailwind <br/>
+[1] Tailwind CSS Installation Code - https://tailwindcss.com/docs/guides/vite <br/>
 [2] Creating Navigation bar - https://www.youtube.com/watch?v=17l6AOc8s10&ab_channel=CodeComplete <br/>
 [3] Routing - https://www.youtube.com/watch?v=17l6AOc8s10&ab_channel=CodeComplete <br/>
-[4] Main - https://www.youtube.com/watch?v=TxXsJnWx9uE&list=PL1HMn5V7V6NGNIblxjbNFXIz9O6pBOGid&index=5&ab_channel=AUCODE <br/>
-[5] Typewriter Animation - https://www.youtube.com/watch?v=Kb1f5bvF6f4&t=1391&ab_channel=webdecoded <br/>
+[4] Main Page - https://www.youtube.com/watch?v=TxXsJnWx9uE&list=PL1HMn5V7V6NGNIblxjbNFXIz9O6pBOGid&index=5&ab_channel=AUCODE <br/>
+[5] React Typewriter Animation - https://www.youtube.com/watch?v=Kb1f5bvF6f4&t=1391&ab_channel=webdecoded <br/>
 [6] Style Responsive Page and Contact Page - https://www.youtube.com/watch?v=YFyAYHWQ2Yo&t=999s&ab_channel=c0d1n0 <br/>
-[7] Deploying React project to Public Domain - https://www.youtube.com/watch?v=7T4w0QJtL-o&ab_channel=ProgrammingwithMist <br/>
-[8] Tailwind Documentation - https://devdocs.io/tailwindcss/
+[7] Tailwind Documentation - https://devdocs.io/tailwindcss/ <br/>
+[8] Deploying React project to Public Domain - https://www.youtube.com/watch?v=7T4w0QJtL-o&ab_channel=ProgrammingwithMist 
