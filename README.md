@@ -29,7 +29,7 @@ It's recommended that you familiarise yourself with React and Tailwind CSS befor
 
 **Step 1 :** Install and set up React on your device: <br/>
 Head to the website https://nodejs.org/en/ and install the latest Node.js to your local environment. <br/>
-**Step 2 :** After installation, open your command prompt and type either of the following commands: **node --version** or **node --v**.  <br/> 
+**Step 2 :** After installation, open your command prompt and type either of the following commands: **node --version** or **node --v**. <br/>
 If installed correctly, the software’s version number should be displayed. <br/>
 **Step 3 :** Now let's set up the Vite Website, inside your command prompt, type the following command and make the following list below: <br/>
 
@@ -100,7 +100,7 @@ git clone https://github.com/UOA-CS732-SE750-Students-2024/cs732-assignment-ykim
 ```
 
 **Step 2 :** Suppose you haven't already installed Node.js. Install at https://nodejs.org/en/. <br/>
-Check through typing either of **node --version** or **node --v** in command prompt. If installed correctly, it will display the software number version. 
+Check through typing either of **node --version** or **node --v** in command prompt. If installed correctly, it will display the software number version.
 
 **Step 3 :** Open the terminal and switch the directory to '.\cs732-assignment-ykim583'. Run the following commands:
 
@@ -237,7 +237,7 @@ The code above is similar to how the nav.jsx cursor bar effect works, so please 
 One thing to Note, to enable size configuration in react icons, traditional text size won't work, so keep the size element written as size={} before the className.
 
 ```
-<div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden z-10 sm:pr-5'>
+<div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden z-10 sm:pr-5 shadow-2xl'>
         <img src={por3} alt="" className='h-full w-full object-cover object-center transition duration-200 hover:scale-105 rounded-lg'/>
 ```
 
@@ -246,7 +246,7 @@ Some extra motion effect is covered on this module project.jsx file, <br/>
 
 - overflow-hidden : (A effect to prevent overflow of element, usually used inside grid or block or container) <br/>
 - transition duration-200 : (A effect that sets duration to an element by 200ms, make it more transformitive) <br/>
-- shadow-xl : (Applies an extra-large drop shadow for a 3D effect) <br/>
+- shadow-2xl : (Applies an double extra-large drop shadow for a 3D effect) <br/>
 
 There is one part that I still need to cover in this tutorial, which is the react-type writer animation feature. This feature is an in-built animation
 feature for React, and anyone interested in it, please refer to the reference [5].
@@ -261,7 +261,7 @@ Let's continue cover some of the utility feature that we haven't covered yet:
 <div className='pt-28 min-h-[115vh] bg-gradient-to-b from-white to-gray-700'>
       <div className='px-7 grid sm:grid-cols-2 gap-6'>
 
-        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden z-10 sm:pr-5'>
+        <div className='flex flex-col sm:grid sm:grid-cols-8 rounded-lg bg-black/40 overflow-hidden z-10 sm:pr-5 shadow-2xl'>
           <a href="https://github.com/UOA-CS732-SE750-Students-2024/cs732-assignment-ykim583" className='h-48 sm:h-80 col-span-3'>
             <img src={por1} alt="" className='h-full w-full object-cover object-center transition duration-200 hover:scale-105 rounded-lg'/>
           </a>
@@ -371,6 +371,7 @@ Although our project has ended, it would be better to deploy this website to the
 For further instruction, refer to reference [8].
 
 ### <a name="ref"> Reference </a> <br/>
+
 [1] Tailwind CSS Installation Code - https://tailwindcss.com/docs/guides/vite <br/>
 [2] Creating Navigation bar - https://www.youtube.com/watch?v=17l6AOc8s10&ab_channel=CodeComplete <br/>
 [3] Routing - https://www.youtube.com/watch?v=17l6AOc8s10&ab_channel=CodeComplete <br/>
@@ -378,4 +379,4 @@ For further instruction, refer to reference [8].
 [5] React Typewriter Animation - https://www.youtube.com/watch?v=Kb1f5bvF6f4&t=1391&ab_channel=webdecoded <br/>
 [6] Style Responsive Page and Contact Page - https://www.youtube.com/watch?v=YFyAYHWQ2Yo&t=999s&ab_channel=c0d1n0 <br/>
 [7] Tailwind Documentation - https://devdocs.io/tailwindcss/ <br/>
-[8] Deploying React project to Public Domain - https://www.youtube.com/watch?v=7T4w0QJtL-o&ab_channel=ProgrammingwithMist 
+[8] Deploying React project to Public Domain - https://www.youtube.com/watch?v=7T4w0QJtL-o&ab_channel=ProgrammingwithMist
