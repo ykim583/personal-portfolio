@@ -156,29 +156,31 @@ The structure always goes from big to small. Firstly, I will walk you over how t
 
 (Code snippet from nav.jsx)
 
-- flex : (Flex will define how your items are going to "fill" over the available space along your central axis, by default to horizontal.) <br/>
-- items-center : (Locates all item to be centered) <br/>
-- justify-between : (Justify between enables equal space between items) <br/>
-- p-7 : (p-7 makes the padding/space of the bar to be 7 across all directions on the items. p{direction}-{size} is how we define, so there is also, pt,pb,pr,pl,px,py <br/>
-- bg-white and bg-opacity : (Have white and transparent background) and **fixed w-full** ensures the navigation bar spans the full width of the viewport. <br/>
-- z-10 : Ensures the navigation bar layers on top of all other content. <br/>
+- `flex` : (Flex will define how your items are going to "fill" over the available space along your central axis, by default to horizontal.) <br/>
+- `items-center` : (Locates all item to be centered) <br/>
+- `justify-between` : (Justify between enables equal space between items) <br/>
+- `p-7` : (p-7 makes the padding/space of the bar to be 7 across all directions on the items. p{direction}-{size} is how we define, so there is also, pt,pb,pr,pl,px,py <br/>
+- `bg-white bg-opacity` : (Have white and transparent background) and **fixed w-full** ensures the navigation bar spans the full width of the viewport. <br/>
+- `z-10` : Ensures the navigation bar layers on top of all other content. <br/>
 
 After that, inside, we will specifically cater to each text, adding icons and hover motion/effect. <br/>
 
-- text-2xl : (Size of the text, follows standard size symbol (XS, S, M, L, ... etc) <br/>
-- text-white : (Colour of text to be set to white) <br/>
-- font-mono : (Set the font of the text to be mono style) <br/>
-- tracking-wider : (Space between String character, different to justify-between as this is space between all items) <br/>
-- space-x-3 : (Space between word, for this example, it would be space between icon Chimney and text Label Name) <br/>
+- `text-2xl` : (Size of the text, follows standard size symbol (XS, S, M, L, ... etc) <br/>
+- `text-white` : (Colour of text to be set to white) <br/>
+- `font-mono` : (Set the font of the text to be mono style) <br/>
+- `tracking-wider` : (Space between String character, different to justify-between as this is space between all items) <br/>
+- `space-x-3` : (Space between word, for this example, it would be space between icon Chimney and text Label Name) <br/>
 
 Add the space-x-size function inside the className and include the “<span>” tag before and after the text to space between the react icon and the text.
 Also, notice I haven't covered any part related to **lg:** (This will be covered in the later part during the responsive design section)
 
 #### Routing
 
-This feature enables users to route around the website and relocate to different web pages. (This is different from hyperlinks). This part is required to make your navigation menu more responsive to the user. <br/>
-However, I won't cover the details in this tutorial, as our primary focus is mastering the Tailwind CSS part. <br/>
-For anyone interested, please refer to reference [3].
+Routing in this React application, enabled by react-router-dom, allows seamless navigation (by navigation bar) between the Hero, Project, and Contact components without full page reloads. 
+Using the BrowserRouter, the app wraps the main component to leverage the HTML5 History for dynamic routing. Within the main component, 
+Routes contain individual Route elements that map specific paths to their corresponding components—displaying Hero at the root path /, Project at /project, and Contact at /Contact.
+The nav component features link components, which provide clickable elements that switch the displayed content according to the defined routes. <br/>
+To learn more about it, please refer to reference [3].
 
 ### <a name="ch3.2"> hero.jsx - Home Page UX/UI Interface and Animation </a>
 
@@ -196,14 +198,14 @@ This is where the main home page, where the user will land, just like the naviga
 
 (Code snippet from hero.jsx)
 
-- w-full min-h-screen : (Using full width and minimum height of the screen) <br/>
+- `w-full min-h-screen` : (Using full width and minimum height of the screen) <br/>
   One noticeable feature is this time, we've styles our our background as image instead of colours. <br/>
-- bg-cover bg-center brightness-80" style={{ backgroundImage: `url(${HomePic})`: (Background is covered not stretcetd though, located center with brightness of 80, and the style we use is image) <br/>
-- flex flex-col : (Make it flexible in dimensions and Stack items vertically by default) <br/>
-- w-1/3 : (As I've splitted this component of screen as section, I'm telling the system to make the width use one third of the part only for ) <br/>
-- mt-10 : (This is putting margin on top by 400px, as 1rem = 4px), Which meant, mb identifies as margion bottom <br/>
-- font-semibold : (Changing font is not the only feature, you can also change the font weight using bold/semi-bold) <br/>
-- text-slate-300 : (Text color of an element to a specific shade of slate gray) <br/>
+- `bg-cover bg-center brightness-80 style={{ backgroundImage: url(${HomePic})` : (Background is covered not stretcetd though, located center with brightness of 80, and the style we use is image) <br/>
+- `flex flex-col` : (Make it flexible in dimensions and Stack items vertically by default) <br/>
+- `w-1/3` : (As I've splitted this component of screen as section, I'm telling the system to make the width use one third of the part only for ) <br/>
+- `mt-10` : (This is putting margin on top by 400px, as 1rem = 4px), Which meant, mb identifies as margion bottom <br/>
+- `font-semibold` : (Changing font is not the only feature, you can also change the font weight using bold/semi-bold) <br/>
+- `text-slate-300` : (Text color of an element to a specific shade of slate gray) <br/>
 
 #### Animated Motion
 
@@ -225,13 +227,13 @@ The following module will capture some tranform motion effects
 (Code snippet from hero.jsx) <br/>
 We initially have a reference link to Resume followed by
 
-- download : (A downloaded files name, for this case, it will be "Example Resume") <br/>
-- hover:bg-gray-400 : (A hover effect, when hover, we have background colour change to gray-400) - (originally white background and black text) <br/>
-- hover:text-white : (A hover effect, when hover, we have text colour change to white) - (originally white background and black text) <br/>
-- hover:scale-110 : (A hover effect, enlarge the scale by 110%) <br/>
-- cursor-pointer : (Make cursor-pointer when mouse moves near button) <br/>
-- rounded-full : (Make a full rounded shape) <br/>
-- inline-block : (Create a single space, which allows to set the width and height of the element) <br/>
+- `download` : (A downloaded files name, for this case, it will be "Example Resume") <br/>
+- `hover:bg-gray-400` : (A hover effect, when hover, we have background colour change to gray-400) - (originally white background and black text) <br/>
+- `hover:text-white` : (A hover effect, when hover, we have text colour change to white) - (originally white background and black text) <br/>
+- `hover:scale-110` : (A hover effect, enlarge the scale by 110%) <br/>
+- `cursor-pointer` : (Make cursor-pointer when mouse moves near button) <br/>
+- `rounded-full` : (Make a full rounded shape) <br/>
+- `inline-block` : (Create a single space, which allows to set the width and height of the element) <br/>
 
 The code above is similar to how the nav.jsx cursor bar effect works, so please refer back to nav.jsx as well. <br/>
 One thing to Note, to enable size configuration in react icons, traditional text size won't work, so keep the size element written as size={} before the className.
@@ -244,12 +246,15 @@ One thing to Note, to enable size configuration in react icons, traditional text
 (Code snippet from project.jsx) <br/>
 Some extra motion effect is covered on this module project.jsx file, <br/>
 
-- overflow-hidden : (A effect to prevent overflow of element, usually used inside grid or block or container) <br/>
-- transition duration-200 : (A effect that sets duration to an element by 200ms, make it more transformitive) <br/>
-- shadow-2xl : (Applies an double extra-large drop shadow for a 3D effect) <br/>
+- `overflow-hidden` : (A effect to prevent overflow of element, usually used inside grid or block or container) <br/>
+- `transition duration-200` : (A effect that sets duration to an element by 200ms, make it more transformitive) <br/>
+- `shadow-2xl` : (Applies an double extra-large drop shadow for a 3D effect) <br/>
 
-There is one part that I still need to cover in this tutorial, which is the react-type writer animation feature. This feature is an in-built animation
-feature for React, and anyone interested in it, please refer to the reference [5].
+There is one part that I still need to cover in this tutorial, which is the react-type writer animation feature.
+This animation is configured to animate a sequence of messages, with a typing effect at a speed of 50ms, pausing for 1000 milliseconds and repeating indefinitely. 
+The style applied sets the font size to `2em` = 32px for clear visibility and uses `display: inline-block` to maintain inline flow with other content. 
+The chosen color code, `#F5EEF8` a soft lavender hue, contrasts the background gently. <br/>
+Please refer to the reference [5] to learn more about it.
 
 ### <a name="ch3.3"> project.jsx - Project Display Page and Responsive design (Mobile/Web) </a>
 
@@ -275,18 +280,18 @@ Let's continue cover some of the utility feature that we haven't covered yet:
 (Code snippet from project.jsx) <br/>
 Now moving back to project.jsx, let's go over some of the utility feature we haven't covered before: <br/>
 
-- Min-h-[100vh] : (Minimum height in which the background should be extended) <br/>
-- bg-gradient-to-b from-white to-gray-700 : (A more advanced bg-colour feature, where colour gradually transitions from white to gray)
-- grid : (Establishes that all elements will follow grid layout)
-- sm:grid : (On sm (small) screens, switches to a grid layout) <br/>
-- sm:grid-cols-2 : (On screens that are sm (small) or larger, it defines the grid to have 2 columns) <br/>
-- gap-6 : (Sets the gap between grid items to 1.5rem or 24px) <br/>
-- rounded-lg : (Applies large border rounding to the corners of the container) <br/>
-- col-span-3 : (In the grid layout, this item will span across 3 columns) <br/>
-- h-full w-full : (Makes the image take up the full height and width of its parent container) <br/>
-- object-cover object-center : (Ensures that the image covers the area without stretching, and it's centered in its container) <br/>
-- mx-auto my-auto : (Automatically centers itself in both x and y direction from the parent container)
-- leading-10 : (Sets the line height of the element to be 10)
+- `Min-h-[100vh]` : (Minimum height in which the background should be extended) <br/>
+- `bg-gradient-to-b from-white to-gray-700` : (A more advanced bg-colour feature, where colour gradually transitions from white to gray)
+- `grid` : (Establishes that all elements will follow grid layout)
+- `sm:grid` : (On sm (small) screens, switches to a grid layout) <br/>
+- `sm:grid-cols-2` : (On screens that are sm (small) or larger, it defines the grid to have 2 columns) <br/>
+- `gap-6` : (Sets the gap between grid items to 1.5rem or 24px) <br/>
+- `rounded-lg` : (Applies large border rounding to the corners of the container) <br/>
+- `col-span-3` : (In the grid layout, this item will span across 3 columns) <br/>
+- `h-full w-full` : (Makes the image take up the full height and width of its parent container) <br/>
+- `object-cover object-center` : (Ensures that the image covers the area without stretching, and it's centered in its container) <br/>
+- `mx-auto my-auto` : (Automatically centers itself in both x and y direction from the parent container)
+- `leading-10` : (Sets the line height of the element to be 10)
 
 #### Responsive Design
 
@@ -309,13 +314,19 @@ theme: {
 
 (Code snippet from tailwind.config.js) <br/>
 
-Now, when we refer back to our example from nav. jsx `text-2xl lg:text-3xl` lg:text-3xl is used which shows that on large size, we need to make the text size 3xl to look more User friendly. <br/>
-However, writing lg:text-3xl may not be feasible for mobile devices; it is more feasible for large screens only. This is why we usually define minor breakpoints first and override them with large utilities later. <br/>
+Now, when we refer back to our example from nav. jsx `text-2xl lg:text-3xl` `lg:text-3xl` is used which shows that on large size, we need to make the text size 3xl to look more User friendly. <br/>
+However, writing `lg:text-3xl` may not be feasible for mobile devices; it is more feasible for large screens only. This is why we usually define minor breakpoints first and override them with large utilities later. <br/>
 So we define we have a default of 2xl text for screens smaller than lg (1024px), and once 1024px is reached, we then change it to 3xl.
+
+In the hero.jsx component, we apply a similar responsive design logic through `flex-col lg:flex-row`. This setup starts with a column layout `flex-col`, optimising content display for mobile users by stacking elements vertically. As the screen size reaches the lg breakpoint, 
+it shifts to a row layout `lg:flex-row`, spreading content horizontally to utilise the increased screen (more grid across).
 
 ### <a name="ch3.4"> contact.jsx - Contact me page and Contact form (+REST) </a>
 
-As we near the end of our tutorial, the final step involves adding a "Contact Me" form. This allows visitors to communicate with you quickly. If you've been following along, you'll find understanding the Tailwind CSS snippet for the form's background simple. This code snippet, which I've already prepared, creates a rounded form with a gray background and includes two text labels.
+As we near the end of our tutorial, the final step involves adding a "Contact Me" form. This allows visitors to communicate with you quickly. If you've been following along, you'll find understanding the Tailwind CSS snippet for the form's background simple. 
+The form is initially structured within a primary div that sets a gradient background (Similar to how we designed the project component). 
+The secondary div creates the container, which uses `mx-auto` for centering and `max-w-3xl` to constrain the form's maximum width to 3-x-large, ensuring it's proportionally appealing on any screen size. 
+This container is styled with `py-7 bg-gray-400 rounded-3xl`, which gives the form a distinct gray backdrop, softened corners, and vertical padding for an organized layout. It includes two headings.
 
 ```
 div className='w-full min-h-screen pt-28 bg-gradient-to-b from-white to-gray-700'>
@@ -347,15 +358,20 @@ So, let's go directly into styling the text boxes and handling form submissions.
 ```
 
 (Code snippet from contact.jsx) <br/>
-You will notice some unusual style id, placeholder, input text, etc. These are all unique identifiers for REST API design for posting specific information to its designated form address. <br/>
-For specific details about REST API connection, please refer to reference [6].<br/>
 
-- mb-2 : (Applies a margin-bottom of 8px to the element) <br/>
-- w-10/12: (Sets the element's width to 10/12ths of the parent element's width) <br/>
-- rounded-md : (Applies a medium radius to all corners of the element, making the edges rounded) <br/>
-- border: (Adds a border of default 1px) <br/>
-- border-gray-400: (Sets the border color to gray-400) <br/>
-- sm:mb-0: (This is a responsive utility that sets the margin-bottom to 0 at the sm screen and above)
+- `mb-2` : (Applies a margin-bottom of 8px to the element) <br/>
+- `w-10/12` : (Sets the element's width to 10/12ths of the parent element's width) <br/>
+- `rounded-md` : (Applies a medium radius to all corners of the element, making the edges rounded) <br/>
+- `border` : (Adds a border of default 1px) <br/>
+- `border-gray-400` : (Sets the border color to gray-400) <br/>
+- `sm:mb-0` : (This is a responsive utility that sets the margin-bottom to 0 at the sm screen and above) <br/>
+
+#### REST
+You will notice some unusual style id, placeholder, input text, etc. These are all unique identifiers for REST API design for posting specific information to its designated form address. 
+The form uses the action attribute to specify the URL of the external service where data should be submitted to https://getform.io/f/raeqrrga (My API). 
+This URL represents the endpoint of a RESTful API designed to receive HTTP POST requests. 
+By setting the method to POST, we ensure that form data is securely transmitted to the server in the request's body. <br/>
+For specific details about REST API connection, please refer to reference [6].
 
 ### <a name="ch3.5"> Additional Step - Deployment to public domain </a>
 
