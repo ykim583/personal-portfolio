@@ -176,8 +176,8 @@ Also, notice I haven't covered any part related to **lg:** (This will be covered
 
 #### Routing
 
-Routing in this React application, enabled by react-router-dom, allows seamless navigation (by navigation bar) between the Hero, Project, and Contact components without full page reloads. 
-Using the BrowserRouter, the app wraps the main component to leverage the HTML5 History for dynamic routing. Within the main component, 
+Routing in this React application, enabled by react-router-dom, allows seamless navigation (by navigation bar) between the Hero, Project, and Contact components without full page reloads.
+Using the BrowserRouter, the app wraps the main component to leverage the HTML5 History for dynamic routing. Within the main component,
 Routes contain individual Route elements that map specific paths to their corresponding components—displaying Hero at the root path /, Project at /project, and Contact at /Contact.
 The nav component features link components, which provide clickable elements that switch the displayed content according to the defined routes. <br/>
 To learn more about it, please refer to reference [3].
@@ -251,8 +251,8 @@ Some extra motion effect is covered on this module project.jsx file, <br/>
 - `shadow-2xl` : (Applies an double extra-large drop shadow for a 3D effect) <br/>
 
 There is one part that I still need to cover in this tutorial, which is the react-type writer animation feature.
-This animation is configured to animate a sequence of messages, with a typing effect at a speed of 50ms, pausing for 1000 milliseconds and repeating indefinitely. 
-The style applied sets the font size to `2em` = 32px for clear visibility and uses `display: inline-block` to maintain inline flow with other content. 
+This animation is configured to animate a sequence of messages, with a typing effect at a speed of 50ms, pausing for 1000 milliseconds and repeating indefinitely.
+The style applied sets the font size to `2em` = 32px for clear visibility and uses `display: inline-block` to maintain inline flow with other content.
 The chosen color code, `#F5EEF8` a soft lavender hue, contrasts the background gently. <br/>
 Please refer to the reference [5] to learn more about it.
 
@@ -318,14 +318,16 @@ Now, when we refer back to our example from nav. jsx `text-2xl lg:text-3xl` `lg:
 However, writing `lg:text-3xl` may not be feasible for mobile devices; it is more feasible for large screens only. This is why we usually define minor breakpoints first and override them with large utilities later. <br/>
 So we define we have a default of 2xl text for screens smaller than lg (1024px), and once 1024px is reached, we then change it to 3xl.
 
-In the hero.jsx component, we apply a similar responsive design logic through `flex-col lg:flex-row`. This setup starts with a column layout `flex-col`, optimising content display for mobile users by stacking elements vertically. As the screen size reaches the lg breakpoint, 
+In the hero.jsx component, we apply a similar responsive design logic through `flex-col lg:flex-row`. This setup starts with a column layout `flex-col`, optimising content display for mobile users by stacking elements vertically. As the screen size reaches the lg breakpoint,
 it shifts to a row layout `lg:flex-row`, spreading content horizontally to utilise the increased screen (more grid across).
+
+Please revisit all the components with this understanding to refine them further.
 
 ### <a name="ch3.4"> contact.jsx - Contact me page and Contact form (+REST) </a>
 
-As we near the end of our tutorial, the final step involves adding a "Contact Me" form. This allows visitors to communicate with you quickly. If you've been following along, you'll find understanding the Tailwind CSS snippet for the form's background simple. 
-The form is initially structured within a primary div that sets a gradient background (Similar to how we designed the project component). 
-The secondary div creates the container, which uses `mx-auto` for centering and `max-w-3xl` to constrain the form's maximum width to 3-x-large, ensuring it's proportionally appealing on any screen size. 
+As we near the end of our tutorial, the final step involves adding a "Contact Me" form. This allows visitors to communicate with you quickly. If you've been following along, you'll find understanding the Tailwind CSS snippet for the form's background simple.
+The form is initially structured within a primary div that sets a gradient background (Similar to how we designed the project component).
+The secondary div creates the container, which uses `mx-auto` for centering and `max-w-3xl` to constrain the form's maximum width to 3-x-large, ensuring it's proportionally appealing on any screen size.
 This container is styled with `py-7 bg-gray-400 rounded-3xl`, which gives the form a distinct gray backdrop, softened corners, and vertical padding for an organized layout. It includes two headings.
 
 ```
@@ -367,9 +369,10 @@ So, let's go directly into styling the text boxes and handling form submissions.
 - `sm:mb-0` : (This is a responsive utility that sets the margin-bottom to 0 at the sm screen and above) <br/>
 
 #### REST
-You will notice some unusual style id, placeholder, input text, etc. These are all unique identifiers for REST API design for posting specific information to its designated form address. 
-The form uses the action attribute to specify the URL of the external service where data should be submitted to https://getform.io/f/raeqrrga (My API). 
-This URL represents the endpoint of a RESTful API designed to receive HTTP POST requests. 
+
+You will notice some unusual style id, placeholder, input text, etc. These are all unique identifiers for REST API design for posting specific information to its designated form address.
+The form uses the action attribute to specify the URL of the external service where data should be submitted to specific URL.
+This URL represents the endpoint of a RESTful API designed to receive HTTP POST requests.
 By setting the method to POST, we ensure that form data is securely transmitted to the server in the request's body. <br/>
 For specific details about REST API connection, please refer to reference [6].
 
