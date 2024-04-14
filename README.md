@@ -136,7 +136,7 @@ const main = () => {
 export default main
 ```
 
-This is a code snippet from the main.jsx file. Most of the structure is similar to how it's shown in the code above. We initially have an `import` feature to import files or modules from the local folders or npm files.
+This is a edited code snippet from the main.jsx file. Most of the structure is similar to how it's shown in the code above. We initially have an `import` feature to import files or modules from the local folders or npm files.
 Then, we have the actual operation const main = () = -> {} where the code base lies; think of it as a function that manages and stores all the components inside your code. We then use the 'export' feature to be accessible to other files.
 
 ### <a name="ch3.1"> nav.jsx - Navigation Menu Configuration (+Routing) </a>
