@@ -1,13 +1,42 @@
-import React from 'react'
+import { useRef, useState } from 'react'
 import AucklandNight from '../assets/AucklandNight.jpg'
 
 const contact = () => {
+  const formRef = useRef(null)
+  const [status, setStatus] = useState('idle') // idle | sending | success | error
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setStatus('sending')
+
+    const form = formRef.current
+    const formData = new FormData(form)
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: { Accept: 'application/json' },
+      })
+
+      if (response.ok) {
+        form.reset()
+        setStatus('success')
+        setTimeout(() => setStatus('idle'), 4000)
+      } else {
+        setStatus('error')
+      }
+    } catch (err) {
+      setStatus('error')
+    }
+  }
+
   return (
     <div
       className='relative w-full min-h-screen bg-cover bg-center flex items-center justify-center px-5'
       style={{ backgroundImage: `url(${AucklandNight})` }}
     >
-        <div className='absolute inset-0 bg-slate-950/60'></div>
+        <div className='absolute inset-0 bg-slate-950/40'></div>
 
         <div className="relative w-full max-w-md bg-slate-900/70 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sm:p-8 shadow-xl">
             <div className="mb-6 text-center">
@@ -19,7 +48,7 @@ const contact = () => {
                 </p>
             </div>
 
-            <form action="https://getform.io/f/raeqrrga" method="POST" className="space-y-3">
+            <form ref={formRef} onSubmit={handleSubmit} action="https://getform.io/f/raeqrrga" method="POST" className="space-y-3">
                 <input
                     type="text"
                     id="name"
@@ -46,10 +75,18 @@ const contact = () => {
                 ></textarea>
                 <button
                     type="submit"
-                    className="w-full py-2.5 bg-indigo-500 text-white text-sm font-medium rounded-lg hover:bg-indigo-400 transition-colors"
+                    disabled={status === 'sending'}
+                    className="w-full py-2.5 bg-indigo-500 text-white text-sm font-medium rounded-lg hover:bg-indigo-400 active:scale-95 transition-all disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                    Send Message
+                    {status === 'sending' ? 'Sending...' : 'Send Message'}
                 </button>
+
+                {status === 'success' && (
+                    <p className="text-center text-sm text-emerald-400 pt-1">Message sent — thanks for reaching out!</p>
+                )}
+                {status === 'error' && (
+                    <p className="text-center text-sm text-red-400 pt-1">Something went wrong. Please try again.</p>
+                )}
             </form>
         </div>
     </div>

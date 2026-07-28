@@ -46,6 +46,15 @@ const PROJECTS = [
 export const project = () => {
   const [isThesisOpen, setIsThesisOpen] = useState(false)
 
+  const handleThesisClick = () => {
+    const isMobile = window.matchMedia('(max-width: 767px)').matches
+    if (isMobile) {
+      window.open(ThesisPdf, '_blank', 'noopener,noreferrer')
+    } else {
+      setIsThesisOpen(true)
+    }
+  }
+
   return (
     <div className='relative min-h-screen bg-cover bg-center pt-24' style={{ backgroundImage: `url(${SeoulNight})` }}>
       <div className='absolute inset-0 bg-slate-950/75'></div>
@@ -79,11 +88,11 @@ export const project = () => {
                   key={index}
                   role="button"
                   tabIndex={0}
-                  onClick={() => setIsThesisOpen(true)}
+                  onClick={handleThesisClick}
                   onKeyDown={(e) => {
                     if (e.key === 'Enter' || e.key === ' ') {
                       e.preventDefault()
-                      setIsThesisOpen(true)
+                      handleThesisClick()
                     }
                   }}
                   className={cardClass}
