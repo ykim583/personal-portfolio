@@ -34,11 +34,11 @@ const PROJECTS = [
   },
   {
     index: '04',
-    title: 'Full-Stack Personal Website',
-    description: "This very site — a full-stack portfolio built with React, Vite, and Tailwind CSS, open-sourced for anyone curious how it's put together.",
+    title: 'Personal Portfolio Website',
+    description: "This very site — a personal portfolio built with React, Vite, and Tailwind CSS, open-sourced for anyone curious how it's put together.",
     tags: ['React', 'Vite', 'Tailwind'],
     type: 'link',
-    href: 'https://github.com/ykim583/FullStackWebsite',
+    href: 'https://github.com/ykim583/personal-portfolio',
     Icon: AiFillGithub,
   },
 ]
@@ -71,13 +71,25 @@ export const project = () => {
               </>
             )
 
-            const cardClass = 'group flex flex-col text-left rounded-2xl bg-slate-900/70 backdrop-blur-sm border border-white/10 overflow-hidden z-10 shadow-xl transition-all duration-200 hover:border-indigo-400/40 hover:shadow-indigo-500/10 hover:-translate-y-1 active:scale-[0.98] active:border-indigo-400/40 p-6 sm:p-7 h-full w-full'
+            const cardClass = 'group flex flex-col text-left rounded-2xl bg-slate-900/70 backdrop-blur-sm border border-white/10 overflow-hidden z-10 shadow-xl transition-all duration-200 hover:border-indigo-400/40 hover:shadow-indigo-500/10 hover:-translate-y-1 active:scale-[0.98] active:border-indigo-400/40 p-6 sm:p-7 h-full w-full cursor-pointer'
 
             if (type === 'modal') {
               return (
-                <button key={index} onClick={() => setIsThesisOpen(true)} className={cardClass}>
+                <div
+                  key={index}
+                  role="button"
+                  tabIndex={0}
+                  onClick={() => setIsThesisOpen(true)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault()
+                      setIsThesisOpen(true)
+                    }
+                  }}
+                  className={cardClass}
+                >
                   {cardContent}
-                </button>
+                </div>
               )
             }
 

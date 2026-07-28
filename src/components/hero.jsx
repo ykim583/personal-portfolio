@@ -18,7 +18,7 @@ const hero = () => {
                 sequence={[
                   "Software Engineer",
                   1000,
-                  "Full-Stack Developer",
+                  "Tech Consultant & Developer",
                   1000,
                   "Based in Auckland, NZ",
                   1000
@@ -30,7 +30,7 @@ const hero = () => {
               />
 
               <hr className="w-16 border-indigo-400/50 my-5"/>
-              <p className='text-lg sm:text-xl text-slate-300 text-center lg:text-left leading-relaxed'>
+              <p className='text-lg sm:text-xl text-slate-300 text-center lg:text-left leading-relaxed bg-white/5 lg:bg-transparent border border-white/10 lg:border-0 rounded-2xl lg:rounded-none p-5 lg:p-0 backdrop-blur-sm lg:backdrop-blur-none'>
               I enjoy building things that are both technically sound and genuinely useful —
               from full-stack web applications to research-driven engineering projects.
               I care about understanding a problem properly before reaching for a solution,

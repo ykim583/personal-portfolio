@@ -25,3 +25,7 @@
     animation: none !important;
   }
 }
+
+html, body {
+  background-color: #020617; /* slate-950 - matches the site's dark theme */
+}
