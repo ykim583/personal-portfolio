@@ -1,42 +1,56 @@
 import React from 'react'
+import AucklandNight from '../assets/AucklandNight.jpg'
 
 const contact = () => {
   return (
-    <div className='w-full min-h-screen pt-28 bg-gradient-to-b from-white to-gray-700'>
-        <div className="mx-auto max-w-3xl py-7 bg-gray-400 rounded-3xl">
-            <div>
-                <div className="mb-4 text-center sm:text-center">
-                    <p
-                        className="mb-4 font-bold text-white text-3xl sm:text-5xl">
-                        Connect With me
-                    </p>
-                    <p className="max-w-3xl text-xl font-bold text-slate-300">
-                        Contact Information Field
-                    </p>
-                </div>
+    <div
+      className='relative w-full min-h-screen bg-cover bg-center flex items-center justify-center px-5'
+      style={{ backgroundImage: `url(${AucklandNight})` }}
+    >
+        <div className='absolute inset-0 bg-slate-950/60'></div>
+
+        <div className="relative w-full max-w-md bg-slate-900/70 backdrop-blur-sm border border-white/10 rounded-2xl p-6 sm:p-8 shadow-xl">
+            <div className="mb-6 text-center">
+                <p className="mb-1 font-bold text-white text-2xl">
+                    Connect With Me
+                </p>
+                <p className="text-sm text-slate-400">
+                    Send a message, I'll get back to you soon.
+                </p>
             </div>
 
-            <div className="p-5 text-center" id="form">
-                    <h2 className="mb-2 text-2xl font-bold text-gray-300">Want to know about me?</h2>
-                    <form action="https://getform.io/f/raeqrrga" method="POST">
-                        <div>
-                            <div className="sm:mb-4">
-                                <div className="sm:mb-4">
-                                    <input type="text" id="name" placeholder="Your name" className="mb-2 w-10/12 rounded-md border border-gray-400 py-2 pl-2 sm:mb-0" name="name" required/>
-                                </div>
-                                <div className="sm:mb-4">
-                                    <input type="email" id="email" placeholder="Your email address" className="mb-2 w-10/12 rounded-md border border-gray-400 py-2 pl-2 sm:mb-0" name="email" required/>
-                                </div>
-                            </div>
-                            <div className="sm:mb-2">
-                                <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-10/12 rounded-md border border-gray-400 py-2 pl-2 sm:mb-0" required></textarea>
-                            </div>
-                            <div className="sm:mb-2">
-                                <button type="submit" className="px-20 py-3 bg-white text-black rounded-full">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-              </div>
+            <form action="https://getform.io/f/raeqrrga" method="POST" className="space-y-3">
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your name"
+                    className="w-full rounded-lg bg-slate-950/60 border border-white/10 py-2.5 px-3.5 text-white placeholder:text-slate-500 outline-none focus:border-indigo-400 transition-colors text-sm"
+                    name="name"
+                    required
+                />
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email address"
+                    className="w-full rounded-lg bg-slate-950/60 border border-white/10 py-2.5 px-3.5 text-white placeholder:text-slate-500 outline-none focus:border-indigo-400 transition-colors text-sm"
+                    name="email"
+                    required
+                />
+                <textarea
+                    id="textarea"
+                    name="textarea"
+                    rows="4"
+                    placeholder="Write your message..."
+                    className="w-full rounded-lg bg-slate-950/60 border border-white/10 py-2.5 px-3.5 text-white placeholder:text-slate-500 outline-none focus:border-indigo-400 transition-colors resize-none text-sm"
+                    required
+                ></textarea>
+                <button
+                    type="submit"
+                    className="w-full py-2.5 bg-indigo-500 text-white text-sm font-medium rounded-lg hover:bg-indigo-400 transition-colors"
+                >
+                    Send Message
+                </button>
+            </form>
         </div>
     </div>
   )
