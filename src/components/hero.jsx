@@ -7,7 +7,14 @@ import { TypeAnimation } from 'react-type-animation';
 
 const hero = () => {
     return (
-        <div className="w-full min-h-screen bg-cover bg-center relative" style={{ backgroundImage: `url(${HomePic})` }}>
+        <div className="w-full min-h-screen relative">
+          <img
+            src={HomePic}
+            alt=""
+            fetchPriority="high"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
           <div className="absolute inset-0 bg-slate-950/60"></div>
           <section className='relative flex flex-col lg:flex-row justify-around items-center pt-32 pb-16 lg:space-x-40 text-white px-6 lg:px-0'>
             
@@ -18,9 +25,9 @@ const hero = () => {
                 sequence={[
                   "Software Engineer",
                   1000,
-                  "Tech Consultant & Developer",
+                  "Tech Consultant & Data Analyst",
                   1000,
-                  "Based in Auckland, NZ",
+                  "Based in South Korea",
                   1000
                 ]}
                 wrapper="span"
@@ -42,12 +49,11 @@ const hero = () => {
               <p className='text-3xl font-semibold text-indigo-300'>About Me</p> 
               <p className='text-slate-300 text-center lg:text-left leading-relaxed'>
                 Outside of code, I enjoy exploring new technologies and staying involved in
-                community initiatives. Take a look through my projects below, or feel free
-                to reach out — I'm always happy to chat.
+                community initiatives. I'm currently on my way building a new project!
               </p>
               <a href={Resume} download="Youngmin Kim Resume" className="bg-indigo-500 text-white px-10 py-2.5 rounded-full 
               hover:bg-indigo-400 active:scale-95 transition-all inline-block text-center cursor-pointer font-medium self-center lg:self-start">
-                Download Resume
+                Download Resume (PDF)
               </a>
               <div className='flex pb-2 pt-2 space-x-4 cursor-pointer self-center lg:self-start'>
                 <a href="https://www.linkedin.com/in/kim-youngmin/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
