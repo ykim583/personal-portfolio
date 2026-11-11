@@ -41,6 +41,15 @@ const PROJECTS = [
     href: 'https://github.com/ykim583/personal-portfolio',
     Icon: AiFillGithub,
   },
+  {
+    index: '05',
+    title: 'Audit Trail',
+    description: 'A tool that automatically records and tracks the sending and retrieval of audit inquiry letters, along with the receipt of PBC materials.',
+    tags: ['Python', 'SQL', 'Automation'],
+    type: 'link',
+    href: 'https://github.com/ykim583/audit-trail',
+    Icon: AiFillGithub,
+  },
 ]
 
 export const project = () => {
@@ -60,8 +69,8 @@ export const project = () => {
       <div className='absolute inset-0 bg-slate-950/75'></div>
 
       <div className='relative py-10 px-5 sm:px-7'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-6xl mx-auto items-stretch'>
-          {PROJECTS.map(({ index, title, description, tags, type, href, Icon }) => {
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 max-w-7xl mx-auto items-stretch'>
+          {PROJECTS.map(({ index, title, description, tags, type, href, Icon }, projectIndex) => {
             const cardContent = (
               <>
                 <div className='flex items-center justify-between mb-4'>
@@ -80,7 +89,17 @@ export const project = () => {
               </>
             )
 
-            const cardClass = 'group flex flex-col text-left rounded-2xl bg-slate-900/70 backdrop-blur-sm border border-white/10 overflow-hidden z-10 shadow-xl transition-all duration-200 hover:border-indigo-400/40 hover:shadow-indigo-500/10 hover:-translate-y-1 active:scale-[0.98] active:border-indigo-400/40 p-6 sm:p-7 h-full w-full cursor-pointer'
+            const isLastOddCard = projectIndex === PROJECTS.length - 1 && PROJECTS.length % 2 !== 0
+            const lastRowSize = PROJECTS.length % 3
+            const isInLastRow = lastRowSize > 0 && projectIndex >= PROJECTS.length - lastRowSize
+            const bottomRowPosition = isInLastRow
+              ? lastRowSize === 1
+                ? 'lg:col-start-3'
+                : projectIndex === PROJECTS.length - 2
+                  ? 'lg:col-start-2'
+                  : 'lg:col-start-4'
+              : ''
+            const cardClass = `group flex flex-col text-left rounded-2xl bg-slate-900/70 backdrop-blur-sm border border-white/10 overflow-hidden z-10 shadow-xl transition-all duration-200 hover:border-indigo-400/40 hover:shadow-indigo-500/10 hover:-translate-y-1 active:scale-[0.98] active:border-indigo-400/40 p-6 sm:p-7 h-full w-full cursor-pointer lg:col-span-2 lg:h-80 ${isLastOddCard ? 'sm:col-span-2 sm:mx-auto sm:w-1/2 lg:mx-0 lg:w-full' : ''} ${bottomRowPosition}`
 
             if (type === 'modal') {
               return (
