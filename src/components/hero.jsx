@@ -1,5 +1,6 @@
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { AiFillGithub } from 'react-icons/ai';
+import { SiNotion } from 'react-icons/si';
 import HomePic from '../assets/Home.jpg';
 import Resume from "../assets/Youngmin Kim Resume.pdf";
 
@@ -64,6 +65,9 @@ const hero = () => {
                 </a>
                 <a href="https://www.instagram.com/mins_chocolate?utm_source=qr" target="_blank" rel="noreferrer" aria-label="Instagram">
                   <BsInstagram size={30} className='border-2 border-white/30 hover:border-indigo-400 hover:text-indigo-400 active:scale-90 rounded-full p-1 hover:scale-110 transition-all'/>
+                </a>
+                <a href="https://app.notion.com/p/KU-Part-III-Semester-One-9f2b775b9a7a458d822d04b809d6d4c5?pvs=12" target="_blank" rel="noreferrer" aria-label="Notion">
+                  <SiNotion size={30} className='border-2 border-white/30 hover:border-indigo-400 hover:text-indigo-400 active:scale-90 rounded-full p-1 hover:scale-110 transition-all'/>
                 </a>
               </div>
             </div>
